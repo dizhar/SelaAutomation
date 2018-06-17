@@ -1,0 +1,15 @@
+\\ptnas1\home_dirs\danieli\documents\visual studio 2013\Projects\ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe.config
+\\ptnas1\home_dirs\danieli\documents\visual studio 2013\Projects\ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
+\\ptnas1\home_dirs\danieli\documents\visual studio 2013\Projects\ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
+\\ptnas1\home_dirs\danieli\documents\visual studio 2013\Projects\ConsoleApplication2\ConsoleApplication2\bin\Debug\WebDriver.dll
+\\ptnas1\home_dirs\danieli\documents\visual studio 2013\Projects\ConsoleApplication2\ConsoleApplication2\bin\Debug\WebDriver.xml
+\\ptnas1\home_dirs\danieli\documents\visual studio 2013\Projects\ConsoleApplication2\ConsoleApplication2\obj\Debug\ConsoleApplication2.exe
+\\ptnas1\home_dirs\danieli\documents\visual studio 2013\Projects\ConsoleApplication2\ConsoleApplication2\obj\Debug\ConsoleApplication2.pdb
+\\ptnas1\home_dirs\danieli\Documents\Visual Studio 2013\Projects\ConsoleApplication2\ConsoleApplication2\bin\Debug\nunit.framework.dll
+\\ptnas1\home_dirs\danieli\Documents\Visual Studio 2013\Projects\ConsoleApplication2\ConsoleApplication2\bin\Debug\nunit.framework.pdb
+\\ptnas1\home_dirs\danieli\Documents\Visual Studio 2013\Projects\ConsoleApplication2\ConsoleApplication2\bin\Debug\nunit.framework.xml
+\\ptnas1\home_dirs\danieli\Documents\Visual Studio 2013\Projects\ConsoleApplication2\ConsoleApplication2\obj\Debug\ConsoleApplication2.csprojResolveAssemblyReference.cache
+\\ptnas1\home_dirs\danieli\Documents\Visual Studio 2013\Projects\ConsoleApplication2\ConsoleApplication2\bin\Debug\WebDriver.Support.dll
+\\ptnas1\home_dirs\danieli\Documents\Visual Studio 2013\Projects\ConsoleApplication2\ConsoleApplication2\bin\Debug\WebDriver.Support.xml
+\\ptnas1\home_dirs\danieli\Documents\Visual Studio 2013\Projects\ConsoleApplication2\ConsoleApplication2\bin\Debug\CSCore.dll
+\\ptnas1\home_dirs\danieli\Documents\Visual Studio 2013\Projects\ConsoleApplication2\ConsoleApplication2\bin\Debug\CSCore.xml

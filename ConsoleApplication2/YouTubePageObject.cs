@@ -68,172 +68,332 @@ namespace ConsoleApplication2
         
         public void searchSong(string title)
         {
-            var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementToBeClickable(seacrhSongTesxtBox));
-            seacrhSongTesxtBox.SendKeys(title);
+            try
+            {
+                var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
+                wait.Until(ExpectedConditions.ElementToBeClickable(seacrhSongTesxtBox));
+                seacrhSongTesxtBox.SendKeys(title);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
 
         public void ClickOnUsersPersonalPlaylist()
         {
-            var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementToBeClickable(Play_List_button));
-            Play_List_button.Click();
+            try
+            {
+                var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
+                wait.Until(ExpectedConditions.ElementToBeClickable(Play_List_button));
+                Play_List_button.Click();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
 
         public void ClickOnTheFirstVideoOnThePlayList()
         {
-            var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementToBeClickable(first_video_on_the_playlist));
-            first_video_on_the_playlist.Click();
+            try
+            {
+                var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
+                wait.Until(ExpectedConditions.ElementToBeClickable(first_video_on_the_playlist));
+                first_video_on_the_playlist.Click();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         public void ClickOnTheFourthVideo()
         {
-            var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementToBeClickable(Fourth_video_on_the_playlist));
-            Fourth_video_on_the_playlist.Click();
+            try
+            {
+                var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
+                wait.Until(ExpectedConditions.ElementToBeClickable(Fourth_video_on_the_playlist));
+                Fourth_video_on_the_playlist.Click();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         public void clickOnTheFirstRecommendedVideo()
         {
-            //wait 3 seconds
-            Thread.Sleep(5000);
-            var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementToBeClickable(first_recommeded_video));
-            first_recommeded_video.Click();
+            try
+            {
+                //wait 3 seconds
+                Thread.Sleep(5000);
+                var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
+                wait.Until(ExpectedConditions.ElementToBeClickable(first_recommeded_video));
+                first_recommeded_video.Click();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
 
         public void clickOnTheMenuBar()
         {
-            //wait 3 seconds
-            Thread.Sleep(5000);
-            var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementToBeClickable(menu_bar));
-            menu_bar.Click();
+            try
+            {
+                //wait 3 seconds
+                Thread.Sleep(5000);
+                var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
+                wait.Until(ExpectedConditions.ElementToBeClickable(menu_bar));
+                menu_bar.Click();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         public void clickOnHistoryTab()
         {
-            Thread.Sleep(5000);
-            var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementToBeClickable(history_tab));
-            history_tab.Click();
+            try
+            {
+                Thread.Sleep(5000);
+                var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
+                wait.Until(ExpectedConditions.ElementToBeClickable(history_tab));
+                history_tab.Click();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         public void removeVideo()
         {
-            Thread.Sleep(5000);
-            var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementToBeClickable(remove_item_the_first_item));
-            remove_item_the_first_item.Click();
+            try
+            {
+                Thread.Sleep(5000);
+                var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
+                wait.Until(ExpectedConditions.ElementToBeClickable(remove_item_the_first_item));
+                remove_item_the_first_item.Click();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
 
         public string getFirstVideoTitleInHistoryList()
         {
-            //wait 3 seconds
-            //Thread.Sleep(5000);
-            var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementToBeClickable(remove_item_the_first_item));
-            return first_video_in_history_list.Text;
+            try
+            {
+                //wait 3 seconds
+                //Thread.Sleep(5000);
+                var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
+                wait.Until(ExpectedConditions.ElementToBeClickable(remove_item_the_first_item));
+                return first_video_in_history_list.Text;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         public void refreshPage()
         {
-
-            PropertiesCollection.driver.Navigate().Refresh();
-            //wait
-            Thread.Sleep(10000);
+            try
+            {
+                PropertiesCollection.driver.Navigate().Refresh();
+                //wait
+                Thread.Sleep(10000);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
 
         public string getVideoTitle()
         {
-            var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementToBeClickable(video_title));
-            return video_title.Text; 
+            try
+            {
+                var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
+                wait.Until(ExpectedConditions.ElementToBeClickable(video_title));
+                return video_title.Text;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
 
         public string getTheFirstVideoInTheHistoryList(){
-            Thread.Sleep(5000);
-            var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementToBeClickable(first_video_in_history_list));
-            return first_video_in_history_list.Text;
+            try
+            {
+                Thread.Sleep(5000);
+                var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
+                wait.Until(ExpectedConditions.ElementToBeClickable(first_video_in_history_list));
+                return first_video_in_history_list.Text;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
 
         public void CloseWindow()
         {
-            PropertiesCollection.driver.Close();
+            try
+            {
+                PropertiesCollection.driver.Close();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         public void clickSearch()
         {
-            var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementToBeClickable(search_button));
-            search_button.Click();
+            try
+            {
+                var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
+                wait.Until(ExpectedConditions.ElementToBeClickable(search_button));
+                search_button.Click();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
 
         public IWebElement thirdVideoOnTheSearchResults()
         {
-            return third_video_down_search_results;
+            try
+            {
+                return third_video_down_search_results;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
 
         public void showResultsInNewWindow(IWebElement element)
         {
-            SeleniumSetMethods.openInNewWindow(PropertyAction.shiftClick, element, PropertyType.CssSelector);
+            try
+            {
+                SeleniumSetMethods.openInNewWindow(PropertyAction.shiftClick, element, PropertyType.CssSelector);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
 
         public void focusOnNewWindow()
         {
-            PropertiesCollection.driver.SwitchTo().Window(PropertiesCollection.driver.WindowHandles.Last());
+            try
+            {
+                PropertiesCollection.driver.SwitchTo().Window(PropertiesCollection.driver.WindowHandles.Last());
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         public Boolean isAudioWorking()
         {
-            Thread.Sleep(5000);
-            return AudioPlayChecker.IsAudioPlaying(PropertyAudio.audioDevice);
+            try
+            {
+                Thread.Sleep(5000);
+                return AudioPlayChecker.IsAudioPlaying(PropertyAudio.audioDevice);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         public Boolean isVideoPlaying()
         {
-            return PropertiesCollection.driver.FindElement(By.XPath("//button[@aria-label='Pause']")).Displayed;
+            try
+            {
+                return PropertiesCollection.driver.FindElement(By.XPath("//button[@aria-label='Pause']")).Displayed;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         public void clickPersonalPlaylist(){
-            var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementToBeClickable(Play_List_button));
-            Play_List_button.Click();
+            try
+            {
+                var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
+                wait.Until(ExpectedConditions.ElementToBeClickable(Play_List_button));
+                Play_List_button.Click();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
 
         public void clickOnTheFirstVideoThatAppearsOnThePlaylist(){
-            var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementToBeClickable(first_video_on_the_playlist));
-            first_video_on_the_playlist.Click();
+            try
+            {
+                var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
+                wait.Until(ExpectedConditions.ElementToBeClickable(first_video_on_the_playlist));
+                first_video_on_the_playlist.Click();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
 
         public void clickOnTheFourthVideo()
         {
-            var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementToBeClickable(Fourth_video_on_the_playlist));
-            Fourth_video_on_the_playlist.Click();
+            try
+            {
+                var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
+                wait.Until(ExpectedConditions.ElementToBeClickable(Fourth_video_on_the_playlist));
+                Fourth_video_on_the_playlist.Click();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         public Boolean isTextVisible(string videoTitle)
         {
-            var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.PresenceOfAllElementsLocatedBy(By.TagName("body")));
-            Thread.Sleep(5000);
-            return PropertiesCollection.driver.PageSource.Contains(videoTitle);
+            try
+            {
+                var wait = new WebDriverWait(PropertiesCollection.driver, TimeSpan.FromSeconds(10));
+                wait.Until(ExpectedConditions.PresenceOfAllElementsLocatedBy(By.TagName("body")));
+                Thread.Sleep(5000);
+                return PropertiesCollection.driver.PageSource.Contains(videoTitle);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
 
